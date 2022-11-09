@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Project</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section id="hero">
+        <header class="head">
+            <div class="head__item">
+                <img id="img" src="./images/Device=Web, State=Default.png" alt="Default">
+               
+                <p class="head__item-text"><strong>Annette Black</strong></p>
+            </div>
+            <div class="head__item">
+                <img id="icon" class="share" src="./images/Type=Share mobile, State=Default.png"  alt="share-icon">
+                <!--- mobolie-->
+                <img class="head__item-mob" src="./images/device.png" alt="">
+            </div>
+        </header> 
+
+        <section class="container">
+            <div class="container__item">
+                <a class="container-href" href="#">Twitter Link</a>
+            </div>
+            <div class="container__item">
+                <a href="#">Zuri Team</a>
+            </div>
+            <div class="container__item">
+                <a href="#">Zuri books</a>
+            </div>
+            <div class="container__item">
+                <a href="#">python books</a>
+            </div>
+            <div class="container__item">
+                <a href="#">Background Check for Coders</a>
+            </div>
+            <div class="container__item">
+                <a href="#">Design Books</a>
+            </div>
+          
+        </section>
+        <div class="last7">
+            <img src="./images/slack.png" alt="slack">
+            <img src="./images/Icon.png" alt="Icon">
+        </div>
+
+        <footer class="footer__container">
+            <div class="footer__container-item">
+                <img src="./images/Vector.png" alt="Vector">
+            </div>
+            <div class="footer__container-item">
+                <p class="footer__text">
+                    HNG Internship 9 Frontend Task
+                </p>
+            </div>
+            <div class="footer__container-item">
+                <img src="./images/I4G.png" alt="">
+            </div>
+        </footer>
+    </section>
+
+
+    <script >
+        document.getElementById('img').addEventListener("mouseover", mouseOver);
+        document.getElementById('img').addEventListener('mouseout', mouseOut);
+
+        document.getElementById('icon').addEventListener("mouseover", over);
+        document.getElementById('icon').addEventListener('mouseout', out);
+
+        function mouseOver(){
+            document.getElementById('img').src = "./images/Device=Web, State=Hover.png";
+        }
+        function mouseOut(){
+            document.getElementById('img').src = "./images/Device=Web, State=Default.png";
+        }
+
+        function over(){
+            document.getElementById('icon').src = "./images/Type=Share, State=Hover.png";
+         }
+         function out(){
+            document.getElementById('icon').src="./images/Type=Share mobile, State=Default.png";
+         }
+    </script>
+</body>
+</html>
